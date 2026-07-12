@@ -1,8 +1,5 @@
 const mongoose = require('mongoose');
 
-// Disable command buffering so queries fail immediately if no connection is established
-mongoose.set('bufferCommands', false);
-
 const connectDB = async () => {
   try {
     const conn = await mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/tagdatech', {
