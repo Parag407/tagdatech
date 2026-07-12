@@ -4,6 +4,10 @@ import { motion } from 'framer-motion';
 import api from '../api/axios';
 
 const Contact = () => {
+  React.useEffect(() => {
+    document.title = "Contact Us & Feedback - Tagda Tech";
+  }, []);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',

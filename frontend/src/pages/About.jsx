@@ -3,6 +3,10 @@ import { Target, Users, BookOpen, Terminal, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const About = () => {
+  React.useEffect(() => {
+    document.title = "About Us - Tagda Tech";
+  }, []);
+
   const values = [
     {
       title: 'Action-First Philosophy',

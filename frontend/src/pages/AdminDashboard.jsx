@@ -72,6 +72,10 @@ const AdminDashboard = () => {
   };
 
   useEffect(() => {
+    document.title = "Admin Control Panel - Tagda Tech";
+  }, []);
+
+  useEffect(() => {
     if (isAuthenticated) {
       loadDashboardData();
     }

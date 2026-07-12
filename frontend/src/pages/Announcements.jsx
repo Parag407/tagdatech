@@ -23,6 +23,7 @@ const Announcements = () => {
   };
 
   useEffect(() => {
+    document.title = "Community Announcements & Updates - Tagda Tech";
     fetchAnnouncements();
   }, []);
 

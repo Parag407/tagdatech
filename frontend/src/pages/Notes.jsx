@@ -25,6 +25,7 @@ const Notes = () => {
   };
 
   useEffect(() => {
+    document.title = "Developer Notes & Roadmap Handouts - Tagda Tech";
     fetchNotes();
   }, []);
 

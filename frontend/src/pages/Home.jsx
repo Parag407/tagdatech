@@ -9,6 +9,7 @@ const Home = () => {
   const [tickerIndex, setTickerIndex] = useState(0);
 
   useEffect(() => {
+    document.title = "Tagda Tech - Elite Developer Community";
     const fetchAnnouncements = async () => {
       try {
         const response = await api.get('/announcements');

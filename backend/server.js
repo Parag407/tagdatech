@@ -19,8 +19,9 @@ const corsOptions = {
     
     const isPagesDev = /\.pages\.dev$/.test(origin);
     const isLocalhost = /^http:\/\/localhost(:\d+)?$/.test(origin);
+    const isVercel = /\.vercel\.app$/.test(origin) || origin === 'https://tagdatech.vercel.app';
     
-    if (isPagesDev || isLocalhost) {
+    if (isPagesDev || isLocalhost || isVercel) {
       callback(null, true);
     } else {
       callback(new Error('Not allowed by CORS policy'));

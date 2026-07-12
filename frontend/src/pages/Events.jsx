@@ -25,6 +25,7 @@ const Events = () => {
   };
 
   useEffect(() => {
+    document.title = "Events & Hackathons - Tagda Tech";
     fetchEvents();
   }, []);
 
