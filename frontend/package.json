@@ -15,8 +15,7 @@
     "lucide-react": "^0.470.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
-    "react-router-dom": "^6.23.1",
-    "tagda-tech": "file:.."
+    "react-router-dom": "^6.23.1"
   },
   "devDependencies": {
     "@types/react": "^19.2.17",
